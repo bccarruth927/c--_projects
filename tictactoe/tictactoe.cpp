@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <vector>
+#include <limits>
 
 #include "tictactoe_functions.hpp"
 
@@ -57,6 +58,19 @@ int main() {
         cout << "Make a choice between 1 - 9...\n";
         cin >> choice;
         cout << "\n\n";
+
+        //Validates a user input is only between the numbers 1 and 9
+        while (choice <= 0 || choice > 10) {
+            if (cin.fail()) {
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(),'\n');
+                cout << "Make a choice between 1 - 9...\n";
+                cin >> choice;
+                cout << "\n\n";
+            } else {
+                break;
+            }
+        }
 
         //Alters the game board based off of users choice
         switch(choice) {
