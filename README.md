@@ -10,8 +10,11 @@ This repository contains multiple projects I've built in C++. Provided is the pr
 
 - #### Hello World!
   - A very simple project the prints "Hello World!" to the terminal.
-- #### Tic-Tac-Toe Game
-  - This is a functional Tic-Tac-Toe game that can be played by 2 players. Currently working inside of the terminal (GUI in development). Accepts user input.
+- #### Tic-Tac-Toe Game (Reworked)
+  A fully functional Tic-Tac-Toe game playable in the computer terminal.
+  - Playable by 2 players with alternating turns.
+  - All user input is validated.
+  - Can distinguish between a win by Tic-Tac-Toe or loss by exceded number of turns.
 - #### Text Adventure Game
   - This is a fictional text based adventure game that asks users a series of questions and gives them a different end result based on their responses.
  
