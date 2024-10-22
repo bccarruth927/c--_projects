@@ -37,5 +37,18 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp"
-    }
+    },
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Local Postgres",
+            "database": "student_mgnt",
+            "username": "postgres",
+            "password": "postgres",
+            "connectionTimeout": 30
+        }
+    ]
 }
